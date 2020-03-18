@@ -64,3 +64,18 @@ Add the code of this [link](https://gist.github.com/ssaunier/60d33d212564daadd5e
 1. Go to _Code > Preferences > Extensions_
 
 Search and install "Reactjs code snippets" (some doc [here](https://github.com/babel/babel-sublime-snippets))
+
+## 3. Commands to run your code locally
+To start the local Webpack Dev Server (usually on port 8080):
+```
+yarn start
+```
+
+To lint all JavaScript files in the src folder:
+```
+yarn lint
+```
+To build and deploy your app to gh-pages branch on the GitHub repo:
+```
+yarn deploy
+```
