@@ -1,4 +1,5 @@
 # Workshop: Introduction to React 
+Build on the top of [Le Wagon React boilerplate](https://github.com/lewagon/react-boilerplate).
 
 ## 1. Set your laptop
 ### Setup for Mac
@@ -9,8 +10,8 @@ On a terminal do:
 ```
 git --version
 cd ~/Desktop
-git clone git@github.com:lewagon/react-boilerplate.git react-giphy 
-cd react-giphy
+git clone git@github.com:yannklein/react-workshop.git react-giphy 
+cd react-giphy/workshop
 yarn install
 rm -rf .git
 git init
@@ -31,8 +32,8 @@ Search for "Node.js prompt" in the Win menu search bar, open it and tap (press E
 ```
 npm install http-server -g
 cd Desktop
-git clone git@github.com:lewagon/react-boilerplate.git react-giphy 
-cd react-giphy
+git clone git@github.com:yannklein/react-workshop.git react-giphy 
+cd react-giphy/workshop
 yarn install
 rm -rf .git
 git init
