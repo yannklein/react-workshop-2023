@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 
-class Gif extends Component {
+// eslint-disable-next-line react/prefer-stateless-function
+export default class Gif extends Component {
 
-  clickGif = () => {
-    // console.log(event);
-    this.props.clickGifFromList(this.props.src);
+  handleClick = () => {
+    const { gifId, changeSelectGif } = this.props;
+    changeSelectGif(gifId);
   }
 
   render() {
-
-    const url = `https://media.giphy.com/media/${this.props.src}/giphy.gif`;
-
+    const { gifId } = this.props;
+    const url = `https://media.giphy.com/media/${gifId}/giphy.gif`;
     return (
-      <img src={url} alt="" className="gif" onClick={this.clickGif}/>
+      <img src={url} alt="gif" className="gif" onClick={this.handleClick} />
     );
   }
 }
-
-export default Gif;

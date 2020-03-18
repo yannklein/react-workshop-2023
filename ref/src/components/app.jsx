@@ -1,55 +1,51 @@
 import React, { Component } from 'react';
-import giphy from 'giphy-api';
 
 import SearchBar from './searchBar';
-import Gif from './gif';
 import GifList from './gifList';
+import Gif from './gif';
 
-const GIPHY_API_KEY = '1KMPHCBIOe3hOjJwCJQX49sRc6cM0oIm';
+const giphy = require('giphy-api')('KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR');
 
+// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      gifIds: ["HuVCpmfKheI2Q"],
-      selectedGif: "HuVCpmfKheI2Q"
-    }
+      giIdList: ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"],
+      gifIdSelected: "WuGSL4LFUMQU"
+    };
+    this.fetchGiphy("star wars");
   }
 
-  fetchGifs = (query) => {
-    giphy({ apiKey: GIPHY_API_KEY, https: true })
-      .search({
-        q: query,
-        rating: 'g',
-        limit: 10
-      }, (err, result) => {
-        this.setState({
-          gifIds: result.data.map(gifObject => gifObject.id)
-        });
-      });
-  };
-
-
-  changeSelection = (src) => {
-    this.setState({
-      selectedGif: src
+  fetchGiphy = (keyword) => {
+    giphy.search({
+      q: keyword,
+      rating: 'g',
+      limit: 10
+    }, (err, res) => {
+      this.setState({ giIdList: res.data.map(gif => gif.id) });
     });
   }
 
-  render () {
+  changeSelectGif = (newSelectedGifId) => {
+    this.setState({ gifIdSelected: newSelectedGifId });
+  }
+
+  render() {
+    const { gifIdSelected, giIdList } = this.state;
     return (
       <div>
         <div className="left-scene">
-          <SearchBar fetch={this.fetchGifs} />
+          <SearchBar fetchGiphy={this.fetchGiphy} />
           <div className="selected-gif">
-            <Gif src={this.state.selectedGif} />
+            <Gif gifId={gifIdSelected} />
           </div>
         </div>
         <div className="right-scene">
-          <GifList selectGif={this.changeSelection} gifList={this.state.gifIds} />
+          <GifList gifIdList={giIdList} changeSelectGif={this.changeSelectGif} />
         </div>
       </div>
-    )
+    );
   }
 }
 

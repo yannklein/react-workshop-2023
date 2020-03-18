@@ -1,0 +1,6 @@
+import '../assets/stylesheets/application.scss';
+
+// eslint-disable-next-line react/prefer-stateless-function
+
+
+const giIdList = ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"];
