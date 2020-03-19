@@ -11,12 +11,13 @@ On a terminal do:
 git --version
 cd ~/Desktop
 git clone git@github.com:yannklein/react-workshop.git react-giphy 
-cd react-giphy/workshop
-yarn install
+cd react-giphy
 rm -rf .git
 git init
 git add .
-git commit -m "Start new project from lewagon/react-boilerplate" 
+git commit -m "initial setup ready for workshop" 
+cd workshop
+yarn install
 yarn start
 ```
 Open the "react-giphy" folder with SublimeText or VS Code
@@ -32,12 +33,13 @@ Search for "Node.js prompt" in the Win menu search bar, open it and tap (press E
 ```
 cd Desktop
 git clone git@github.com:yannklein/react-workshop.git react-giphy 
-cd react-giphy/workshop
-yarn install
+cd react-giphy
 rm -rf .git
 git init
 git add .
-git commit -m "Start new project from lewagon/react-boilerplate" 
+git commit -m "initial setup ready for workshop" 
+cd workshop
+yarn install
 yarn start
 ```
 
