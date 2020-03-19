@@ -30,7 +30,6 @@ In your browser go to this url: `localhost:8080`
 
 Search for "Node.js prompt" in the Win menu search bar, open it and tap (press Enter after each line):
 ```
-npm install http-server -g
 cd Desktop
 git clone git@github.com:yannklein/react-workshop.git react-giphy 
 cd react-giphy/workshop
