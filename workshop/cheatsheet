@@ -5,3 +5,11 @@ import '../assets/stylesheets/application.scss';
 const giIdList = ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"];
 
 const giphy = require('giphy-api')('KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR');
+
+giphy.search({
+  q: keyword,
+  rating: 'g',
+  limit: 10
+}, (err, res) => {
+  this.setState({ giIdList: res.data.map(gif => gif.id) });
+});
