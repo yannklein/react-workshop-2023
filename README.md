@@ -10,7 +10,7 @@ On a terminal do:
 ```
 git --version
 cd ~/Desktop
-git clone git@github.com:yannklein/react-workshop.git react-giphy 
+git clone https://github.com/yannklein/react-workshop.git react-giphy 
 cd react-giphy
 rm -rf .git
 git init
@@ -33,7 +33,7 @@ In your browser go to this url: `localhost:8080`
 Search for "Node.js prompt" in the Win menu search bar, open it and tap (press Enter after each line):
 ```
 cd Desktop
-git clone git@github.com:yannklein/react-workshop.git react-giphy 
+git clone https://github.com/yannklein/react-workshop.git react-giphy 
 cd react-giphy
 rm -rf .git
 git init
