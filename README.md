@@ -4,7 +4,10 @@ Build on the top of [Le Wagon React boilerplate](https://github.com/lewagon/reac
 ## 1. Set your laptop
 ### Setup for Mac
 
-Install NodeJS (https://nodejs.org/en/)
+_Don't do the install below if you are a LW alumni_
+- Install NodeJS (https://nodejs.org/en/)
+- Install Yarn (https://classic.yarnpkg.com/en/docs/install/)
+- Install Webpack (https://webpack.js.org/guides/installation/)
 
 On a terminal do:
 ```
@@ -29,6 +32,8 @@ In your browser go to this url: `localhost:8080`
 
 - Install NodeJS (https://nodejs.org/en/)
 - Install Git (https://git-scm.com/download/win, during the installation select the option "use git from a Win command prompt"
+- Install Yarn (https://classic.yarnpkg.com/en/docs/install/)
+- Install Webpack (https://webpack.js.org/guides/installation/)
 
 Search for "Node.js prompt" in the Win menu search bar, open it and tap (press Enter after each line):
 ```
