@@ -30,6 +30,7 @@ In your browser go to this url: `localhost:8080`
 
 ### Setup for Windows
 
+_Don't do the install below if you are a LW alumni_
 - Install NodeJS (https://nodejs.org/en/)
 - Install Git (https://git-scm.com/download/win, during the installation select the option "use git from a Win command prompt"
 - Install Yarn (https://classic.yarnpkg.com/en/docs/install/)
