@@ -86,6 +86,11 @@ To lint all JavaScript files in the src folder:
 yarn lint
 ```
 To build and deploy your app to gh-pages branch on the GitHub repo:
+
+Install `hub` : https://github.com/github/hub (not needed for LW alumni)
+
 ```
+hub create react-giphy
+git push origin master
 yarn deploy
 ```
