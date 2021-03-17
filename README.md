@@ -1,6 +1,10 @@
 # Workshop: Introduction to React 
 Build on the top of [Le Wagon React boilerplate](https://github.com/lewagon/react-boilerplate).
 
+## Demo
+
+https://yannklein.github.io/react-workshop/
+
 ## 1. Set your laptop
 ### Setup for Mac
 
