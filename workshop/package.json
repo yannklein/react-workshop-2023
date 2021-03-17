@@ -24,6 +24,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
+    "@webpack-cli/init": "^1.1.3",
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
@@ -32,8 +33,9 @@
     "react-dom": ">=16.2.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-cli serve --mode development",
     "lint": "eslint './src/**/*.js*'",
-    "deploy": "webpack && gh-pages -d dist"
+    "create-gh-pages": "git branch gh-pages -f && git push origin gh-pages -f && gh-pages -d dist && gh repo view -w",
+    "deploy": "webpack && yarn create-gh-pages"
   }
 }
