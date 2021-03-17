@@ -4,7 +4,10 @@ import SearchBar from './searchBar';
 import GifList from './gifList';
 import Gif from './gif';
 
-const giphy = require('giphy-api')('KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR');
+const giphy = require('giphy-api')({
+  apiKey: 'KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR',
+  https: true
+});
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
@@ -14,7 +17,7 @@ class App extends Component {
       giIdList: ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"],
       gifIdSelected: "WuGSL4LFUMQU"
     };
-    this.fetchGiphy("star wars");
+    this.fetchGiphy("tokyo");
   }
 
   fetchGiphy = (keyword) => {
