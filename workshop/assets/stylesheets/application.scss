@@ -9,6 +9,14 @@ body {
   height: 100vh;
 }
 
+.header-centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  margin: 0;
+}
+
 .left-scene {
   flex: 0 0 60%;
   position: sticky;
