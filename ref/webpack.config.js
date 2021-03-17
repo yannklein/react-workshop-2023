@@ -11,23 +11,23 @@ module.exports = {
       template: '!!html-loader!templates/index.html'
     })
   ],
-  devtool: 'sourcemap',
+  devtool: "source-map",
   mode: "development",
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: 'babel-loader'
       },
       {
         test: /\.s?css$/,
         exclude: /node_modules/,
-        loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        use: 'html-loader'
       },
     ]
   },
