@@ -24,7 +24,6 @@ git init
 git add .
 git commit -m "initial setup ready for workshop" 
 cd workshop
-rm yarn.lock
 yarn install
 yarn start
 ```
@@ -50,7 +49,6 @@ git init
 git add .
 git commit -m "initial setup ready for workshop" 
 cd workshop
-rm yarn.lock
 yarn install
 yarn start
 ```
