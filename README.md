@@ -87,10 +87,10 @@ yarn lint
 ```
 To build and deploy your app to gh-pages branch on the GitHub repo:
 
-Install `hub` : https://github.com/github/hub (not needed for LW alumni)
+Install `gh` : https://cli.github.com/ (not needed for LW alumni)
 
 ```
-hub create react-giphy
+gh repo create react-giphy
 git push origin master
 yarn deploy
 ```
