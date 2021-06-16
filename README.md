@@ -39,7 +39,7 @@ _Don't do the install below if you are a LW alumni_
 - Install Yarn (https://classic.yarnpkg.com/en/docs/install/)
 - Install Webpack (https://webpack.js.org/guides/installation/)
 
-Search for "Node.js prompt" in the Win menu search bar, open it and tap (press Enter after each line):
+Search for "Node.js prompt" in the Win menu search bar (or your normal terminal for LW students), open it and tap (press Enter after each line):
 ```
 cd Desktop
 git clone https://github.com/yannklein/react-workshop.git react-giphy 
