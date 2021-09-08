@@ -1,55 +1,43 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-import SearchBar from './searchBar';
-import GifList from './gifList';
-import Gif from './gif';
+import SearchBar from './SearchBar';
+import GifList from './GifList';
+import Gif from './Gif';
 
 const giphy = require('giphy-api')({
   apiKey: 'KsltJNEs1v3QDDVlinP6EFo2GqjFxgRR',
   https: true
 });
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      giIdList: ["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"],
-      gifIdSelected: "WuGSL4LFUMQU"
-    };
-    this.fetchGiphy("tokyo");
-  }
-
-  fetchGiphy = (keyword) => {
+const App = () => {
+  const [gifIdSelected, setGifIdSelected] = useState("WuGSL4LFUMQU");
+  const [giIdList, setGiIdList] = useState(["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"]);
+  const fetchGiphy = (keyword) => {
     giphy.search({
       q: keyword,
       rating: 'g',
       limit: 10
     }, (err, res) => {
-      this.setState({ giIdList: res.data.map(gif => gif.id) });
+      setGiIdList(res.data.map((gif) => gif.id));
     });
-  }
+  };
+  const changeSelectGif = (newSelectedGifId) => {
+    setGifIdSelected(newSelectedGifId);
+  };
 
-  changeSelectGif = (newSelectedGifId) => {
-    this.setState({ gifIdSelected: newSelectedGifId });
-  }
-
-  render() {
-    const { gifIdSelected, giIdList } = this.state;
-    return (
-      <div>
-        <div className="left-scene">
-          <SearchBar fetchGiphy={this.fetchGiphy} />
-          <div className="selected-gif">
-            <Gif gifId={gifIdSelected} />
-          </div>
-        </div>
-        <div className="right-scene">
-          <GifList gifIdList={giIdList} changeSelectGif={this.changeSelectGif} />
+  return (
+    <div>
+      <div className="left-scene">
+        <SearchBar fetchGiphy={fetchGiphy} />
+        <div className="selected-gif">
+          <Gif gifId={gifIdSelected} />
         </div>
       </div>
-    );
-  }
-}
+      <div className="right-scene">
+        <GifList gifIdList={giIdList} changeSelectGif={changeSelectGif} />
+      </div>
+    </div>
+  );
+};
 
 export default App;
