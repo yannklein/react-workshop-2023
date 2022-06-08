@@ -1,11 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import '../assets/stylesheets/application.scss';
 
 import App from './components/App';
 
-const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<App />, root);
+const container = document.getElementById('root');
+if (container) {
+  const root = ReactDOM.createRoot(container);
+  root.render(<App />);
 }
