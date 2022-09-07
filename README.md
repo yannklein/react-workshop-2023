@@ -102,6 +102,8 @@ To build and deploy your app to gh-pages branch on the GitHub repo:
 Install `gh` : https://cli.github.com/ (not needed for LW alumni)
 
 ```
+git add .
+git commit -m "workshop done"
 gh repo create --public --source=.
 ```
 
