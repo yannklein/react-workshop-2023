@@ -27,6 +27,11 @@ cd workshop
 yarn install
 yarn start
 ```
+
+You should see this on the terminal:
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/26819547/188800617-8f08f06c-e8d9-4bfd-aaf5-62a45bd06661.png">
+
 Open the "react-giphy" folder with SublimeText or VS Code
 
 In your browser go to this url: `localhost:8080`
@@ -52,6 +57,11 @@ cd workshop
 yarn install
 yarn start
 ```
+
+You should see this on the terminal:
+
+<img width="727" alt="image" src="https://user-images.githubusercontent.com/26819547/188800617-8f08f06c-e8d9-4bfd-aaf5-62a45bd06661.png">
+
 
 Open the "react-giphy" folder with SublimeText or VS Code
 
