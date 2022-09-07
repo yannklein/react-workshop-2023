@@ -101,6 +101,8 @@ To build and deploy your app to gh-pages branch on the GitHub repo:
 
 Install `gh` : https://cli.github.com/ (not needed for LW alumni)
 
+In your `workshop` folder inside your terminal do:
+
 ```
 git add .
 git commit -m "workshop done"
@@ -113,3 +115,5 @@ then follow the steps and finally do:
 git push origin master
 yarn deploy
 ```
+
+Your website shoud be available at [YOUR_GITHUB_ACCOUNT].github.io/react-giphy
