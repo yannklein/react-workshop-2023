@@ -102,7 +102,12 @@ To build and deploy your app to gh-pages branch on the GitHub repo:
 Install `gh` : https://cli.github.com/ (not needed for LW alumni)
 
 ```
-gh repo create react-giphy
+gh repo create
+```
+
+then follow the steps and finally do:
+
+```
 git push origin master
 yarn deploy
 ```
