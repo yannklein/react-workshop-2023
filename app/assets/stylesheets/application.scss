@@ -7,6 +7,9 @@ body {
 #root > div {
   display: flex;
   height: 100vh;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
 
 .header-centered {
@@ -15,4 +18,18 @@ body {
   left: 50%;
   transform: translate(-50%, -100%);
   margin: 0;
+}
+
+.sm-photo-card {
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.sm-photo {
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
 }
