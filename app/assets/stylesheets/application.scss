@@ -12,6 +12,13 @@ body {
   justify-content: center;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
 .header-centered {
   position: fixed;
   top: 50%;
@@ -21,10 +28,7 @@ body {
 }
 
 .sm-photo-card {
-  width: 300px;
-  height: 200px;
-  border-radius: 4px;
-  object-fit: cover;
+  // not sure this is needed
 }
 
 .sm-photo {
@@ -32,4 +36,14 @@ body {
   height: 200px;
   border-radius: 4px;
   object-fit: cover;
+}
+
+.sm-photo:hover {
+  filter: contrast(1.5);
+}
+
+.full-photo {
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 4px;
 }

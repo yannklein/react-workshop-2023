@@ -1,9 +1,13 @@
 import React from "react";
 
-const Photo = () => {
+const Photo = ({img, setSelectedImg}) => {
+  const imgUrl = `../../../assets/images/${img}.jpg`
+  const handleClick = () => {
+    setSelectedImg(img);
+  };
   return (
     <div className="sm-photo-card">
-      <img src="../../../assets/images/1.jpg" alt="photo" className="sm-photo"/>
+      <img src={imgUrl} alt="photo" className="sm-photo" onClick={handleClick} />
     </div>
   );
 };

@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 
 import Photo from './Photo';
+import FullPhoto from './FullPhoto';
+import Gallery from "./Gallery";
 
 const App = () => {
+  const [selectedImg, setSelectedImg] = useState();
   return (
     <div className="container">
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
-      <Photo />
+      <Gallery setSelectedImg={setSelectedImg} />
     </div>
   );
 };
