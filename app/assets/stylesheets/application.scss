@@ -36,10 +36,11 @@ body {
   height: 200px;
   border-radius: 4px;
   object-fit: cover;
+  filter: contrast(0.9);
 }
 
 .sm-photo:hover {
-  filter: contrast(1.5);
+  filter: contrast(1);
 }
 
 .full-photo {
