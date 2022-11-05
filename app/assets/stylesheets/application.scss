@@ -28,14 +28,20 @@ body {
 }
 
 .sm-photo-card {
-  // not sure this is needed
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mini-photo-card {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
 }
 
 .sm-photo {
-  width: 300px;
-  height: 200px;
+  width: 100%;
   border-radius: 4px;
-  object-fit: cover;
   filter: contrast(0.9);
 }
 

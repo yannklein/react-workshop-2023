@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
-import Photo from './Photo';
-import FullPhoto from './FullPhoto';
 import Gallery from "./Gallery";
 
 const App = () => {
   const [selectedImg, setSelectedImg] = useState();
+  const [photoCardClass, setPhotoCardClass] = useState('sm-photo-card');
   return (
     <div className="container">
-      <Gallery setSelectedImg={setSelectedImg} selectedImg={selectedImg} />
+      <Gallery setSelectedImg={setSelectedImg} selectedImg={selectedImg} photoCardClass={photoCardClass} setPhotoCardClass={setPhotoCardClass} />
     </div>
   );
 };
