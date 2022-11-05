@@ -19,6 +19,13 @@ body {
   justify-content: center;
 }
 
+// .gallery {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   column-gap: 8px;
+//   row-gap: 8px;
+// }
+
 .header-centered {
   position: fixed;
   top: 50%;
@@ -34,8 +41,8 @@ body {
 }
 
 .mini-photo-card {
-  width: 90px;
-  height: 60px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -53,4 +60,5 @@ body {
   height: 80vh;
   object-fit: cover;
   border-radius: 4px;
+  grid-column: 1/3;
 }

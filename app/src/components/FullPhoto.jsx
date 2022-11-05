@@ -2,7 +2,7 @@ import React from "react";
 
 const FullPhoto = ({img, spot}) => {
   const imgUrl = `../../../assets/images/${img}.jpg`
-  if (img === spot) {
+  if (img !== undefined) {
     return (
       <div>
         <img src={imgUrl} alt="" className="full-photo" />
