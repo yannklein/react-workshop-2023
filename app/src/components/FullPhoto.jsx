@@ -1,7 +1,7 @@
 import React from "react";
 
-const FullPhoto = ({img, spot}) => {
-  const imgUrl = `../../../assets/images/${img}.jpg`
+const FullPhoto = ({ img }) => {
+  const imgUrl = `../../../assets/images/${img}.jpg`;
   if (img !== undefined) {
     return (
       <div>

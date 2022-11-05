@@ -1,11 +1,15 @@
 import React from "react";
 
-const Photo = ({img, selectedImg, setSelectedImg, photoCardClass, setPhotoCardClass}) => {
-  const imgUrl = `../../../assets/images/${img}.jpg`
+const Photo = (
+  {
+    img, selectedImg, setSelectedImg, photoCardClass, setPhotoCardClass
+  }
+) => {
+  const imgUrl = `../../../assets/images/${img}.jpg`;
   const handleClick = (event) => {
     if (selectedImg !== undefined) {
-      let hiddenPhotos = document.getElementsByClassName('hidden');
-      let hiddenPhoto = hiddenPhotos[0];
+      const hiddenPhotos = document.getElementsByClassName('hidden');
+      const hiddenPhoto = hiddenPhotos[0];
       hiddenPhoto.className = 'mini-photo-card';
     }
     setSelectedImg(img);
@@ -14,7 +18,12 @@ const Photo = ({img, selectedImg, setSelectedImg, photoCardClass, setPhotoCardCl
   };
   return (
     <div className={photoCardClass}>
-      <img src={imgUrl} alt="photo" className="sm-photo" onClick={handleClick} />
+      <img
+        src={imgUrl}
+        alt=""
+        className="sm-photo"
+        onClick={handleClick}
+      />
     </div>
   );
 };

@@ -7,7 +7,12 @@ const App = () => {
   const [photoCardClass, setPhotoCardClass] = useState('sm-photo-card');
   return (
     <div className="container">
-      <Gallery setSelectedImg={setSelectedImg} selectedImg={selectedImg} photoCardClass={photoCardClass} setPhotoCardClass={setPhotoCardClass} />
+      <Gallery
+        setSelectedImg={setSelectedImg}
+        selectedImg={selectedImg}
+        photoCardClass={photoCardClass}
+        setPhotoCardClass={setPhotoCardClass}
+      />
     </div>
   );
 };
