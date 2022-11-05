@@ -4,7 +4,7 @@ import Photo from './Photo';
 import FullPhoto from "./FullPhoto";
 
 const Gallery = ({img, setSelectedImg}) => {
-  const photosArray = ['1', '1', '1', '1', '1', '1', '1', '1', '1']
+  const photosArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
   return (
     <div className="gallery">
       {
