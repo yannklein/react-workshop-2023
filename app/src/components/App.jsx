@@ -8,7 +8,7 @@ const App = () => {
   const [selectedImg, setSelectedImg] = useState();
   return (
     <div className="container">
-      <Gallery setSelectedImg={setSelectedImg} />
+      <Gallery setSelectedImg={setSelectedImg} selectedImg={selectedImg} />
     </div>
   );
 };
