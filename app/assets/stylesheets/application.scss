@@ -12,19 +12,19 @@ body {
   justify-content: center;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-}
-
 // .gallery {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   column-gap: 8px;
-//   row-gap: 8px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 8px;
+//   justify-content: center;
 // }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
+}
 
 .header-centered {
   position: fixed;
@@ -58,14 +58,13 @@ body {
 
 .full-photo {
   height: 80vh;
+  width: 100%;
   object-fit: cover;
   border-radius: 4px;
-  grid-column: 1/3;
   margin: 8px auto;
 }
 
 .full-div {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  grid-column: 1/4;
 }

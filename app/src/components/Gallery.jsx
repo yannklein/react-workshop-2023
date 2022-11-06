@@ -13,25 +13,37 @@ const Gallery = (
     <div className="full-gallery">
       <div className="gallery">
         {
-          photosArray.map((img) => (
-            <div>
-              <Photo
-                img={img}
-                key={img}
-                setSelectedImg={setSelectedImg}
-                selectedImg={selectedImg}
-                photoCardClass={photoCardClass}
-                setPhotoCardClass={setPhotoCardClass}
-              />
-            </div>
-          ))
+          photosArray.map((img) => {
+            let component;
+            if (img !== selectedImg) {
+              component = (
+                <div>
+                  <Photo
+                    img={img}
+                    key={img}
+                    setSelectedImg={setSelectedImg}
+                    selectedImg={selectedImg}
+                    photoCardClass={photoCardClass}
+                    setPhotoCardClass={setPhotoCardClass}
+                  />
+                </div>
+              );
+            } else {
+              component = (
+                <div className="full-div">
+                  <FullPhoto img={selectedImg} />
+                </div>
+              );
+            }
+            return component;
+          })
         }
       </div>
-      <div className="full-div">
+      {/* <div className="full-div">
         {
           selectedImg && (<FullPhoto img={selectedImg} />)
         }
-      </div>
+      </div> */}
     </div>
   );
 };
