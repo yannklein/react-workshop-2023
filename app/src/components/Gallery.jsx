@@ -31,7 +31,10 @@ const Gallery = (
             } else {
               component = (
                 <div className="full-div">
-                  <FullPhoto img={selectedImg} />
+                  <FullPhoto
+                    img={selectedImg}
+                    setSelectedImg={setSelectedImg}
+                  />
                 </div>
               );
             }

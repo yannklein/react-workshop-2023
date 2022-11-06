@@ -2,7 +2,7 @@ import React from "react";
 
 const Photo = (
   {
-    img, selectedImg, setSelectedImg, photoCardClass, setPhotoCardClass
+    img, setSelectedImg, photoCardClass
   }
 ) => {
   const imgUrl = `../../../assets/images/${img}.jpg`;
