@@ -97,6 +97,8 @@ To lint all JavaScript files in the src folder:
 ```
 yarn lint
 ```
+
+## 4. Deploy your app to GH pages
 To build and deploy your app to gh-pages branch on the GitHub repo:
 
 Install `gh` : https://cli.github.com/ (not needed for LW alumni)
