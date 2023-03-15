@@ -24,6 +24,12 @@ git init
 git add .
 git commit -m "initial setup ready for workshop" 
 cd workshop
+yarn install
+yarn start
+```
+
+If problem, do that:
+```
 nvm install 14.15.5 # making sure you have a compatible node version
 nvm use 14.15.5
 yarn install
@@ -56,6 +62,12 @@ git init
 git add .
 git commit -m "initial setup ready for workshop" 
 cd workshop
+yarn install
+yarn start
+```
+
+If problem, do that:
+```
 nvm install 14.15.5 # making sure you have a compatible node version
 nvm use 14.15.5
 yarn install
