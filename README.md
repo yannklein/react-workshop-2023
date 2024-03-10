@@ -1,3 +1,6 @@
+**[⚠️ Deprecated]** This workshop had a long and happy life but got too old now and need a well needed rest...
+Go to this new version of the [React Workshop here](https://github.com/yannklein/react-workshop)!
+
 # Workshop: Introduction to React 
 Build on the top of [Le Wagon React boilerplate](https://github.com/lewagon/react-boilerplate).
 
